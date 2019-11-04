@@ -159,10 +159,11 @@ h5 {
   flex-direction: column;
   justify-content: start;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
+  /* margin: 0 auto;
+  padding: 0 30px; */
 }
 
+/* Naviagtion bar */
 nav {
   margin-top: 20px;
   display: flex;
@@ -170,11 +171,12 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
-@media only screen and (max-width: 500px) {
-  nav {
-    flex-direction: column-reverse;
-    justify-content: reverse start;
-  }
+
+.nav-links {
+    width: 80%;
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 nav a {
@@ -183,7 +185,19 @@ nav a {
   color: #a8a8a8;
 }
 
+@media only screen and (max-width: 800px) {
+    nav {
+        flex-direction: column-reverse;
+    }
+}
+
 @media only screen and (max-width: 500px) {
+  .nav-links {
+    flex-direction: column-reverse;
+    justify-content: start;
+    width: 100%;
+  }
+
   nav a {
     width: 100%;
     text-justify: center;
@@ -201,6 +215,7 @@ nav a {
   }
 }
 
+/* Index Header */
 header {
   display: flex;
   justify-content: space-around;
@@ -246,4 +261,56 @@ header {
   width: 170px;
   height: 35px;
   font-size: 16px;
+}
+
+/* Index middle section */
+.section-container {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  .section-row {
+    flex-direction: column;
+  }
+}
+
+.segment {
+  margin: 20px 20px;
+}
+
+.seg-1,
+.seg-2 {
+  height: auto;
+  width: 48%;
+}
+
+.seg-3,
+.seg-4,
+.seg-5 {
+  height: auto;
+  width: 31%;
+}
+
+@media only screen and (max-width: 800px) {
+  .segment {
+    width: 90%;
+    align-items: center;
+  }
+}
+
+.middle-img {
+    height: auto;
+    width: 100%;
+}
+
+hr {
+  margin: 0 20px 20px 20px;
 }
