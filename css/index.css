@@ -201,7 +201,6 @@ nav a {
 }
 @media only screen and (min-width: 800px) {
   .nav-links {
-    justify-content: space-around;
     width: 75%;
   }
 }
@@ -219,9 +218,9 @@ nav a {
   }
 }
 @media only screen and (min-width: 800px) {
-    .logo-container {
-        width: 25%;
-    }
+  .logo-container {
+    width: 25%;
+  }
 }
 
 /* Index Header */
@@ -255,12 +254,13 @@ header {
 .header-img {
   width: 400px;
   height: 400px;
+  display: none;
 }
 
 /* Media query for getting rid of globe pic for mobile */
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
   .header-img {
-    display: none;
+    display: inline-block;
   }
 }
 
@@ -283,36 +283,34 @@ section {
 
 .section-row {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
   .section-row {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
 .segment {
   margin: 20px 20px;
+  width: 90%;
+  align-items: center;
 }
 
-.seg-1,
-.seg-2 {
-  height: auto;
-  width: 48%;
-}
+@media only screen and (min-width: 800px) {
+  .seg-1,
+  .seg-2 {
+    height: auto;
+    width: 48%;
+  }
 
-.seg-3,
-.seg-4,
-.seg-5 {
-  height: auto;
-  width: 31%;
-}
-
-@media only screen and (max-width: 800px) {
-  .segment {
-    width: 90%;
-    align-items: center;
+  .seg-3,
+  .seg-4,
+  .seg-5 {
+    height: auto;
+    width: 31%;
   }
 }
 
