@@ -1,6 +1,5 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-
 html,
 body,
 div,
@@ -153,3 +152,54 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+}
+
+nav {
+    margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 500px ) {
+	nav {
+        flex-direction: column-reverse;
+        justify-content: reverse start;
+    }
+}
+
+nav a {
+  text-decoration: none;
+  text-decoration: bold;
+  color: #a8a8a8;
+}
+
+@media only screen and (max-width: 500px ) {
+	nav a{
+        width: 100%;
+        text-justify: center;
+        height: 50px;
+        text-align: center;
+        border-bottom: gray solid 1px;
+        padding-top: 15px;
+    }
+
+    .logo-container {
+        width: 100%;
+        text-align: center;
+        border-bottom: gray solid 1px;
+        padding-bottom: 20px;
+    }
+}
+
+
