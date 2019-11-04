@@ -154,13 +154,10 @@ h5 {
 }
 
 .container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   max-width: 1200px;
-  /* margin: 0 auto;
-  padding: 0 30px; */
 }
 
 /* Naviagtion bar */
@@ -173,8 +170,8 @@ nav {
 }
 
 .nav-links {
-    width: 80%;
-    display: flex;
+  width: 80%;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -186,9 +183,9 @@ nav a {
 }
 
 @media only screen and (max-width: 800px) {
-    nav {
-        flex-direction: column-reverse;
-    }
+  nav {
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -257,15 +254,16 @@ header {
 
 .btn-lg {
   background: white;
-  border: black solid 1px;
   width: 170px;
   height: 35px;
   font-size: 16px;
 }
 
 /* Index middle section */
+section {
+  margin: 20px 0;
+}
 .section-container {
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,10 +305,21 @@ header {
 }
 
 .middle-img {
-    height: auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 hr {
   margin: 0 20px 20px 20px;
+}
+
+/* Contacts */
+address {
+  margin: 20px 0px 20px 20px;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  padding-top: 20px;
 }
