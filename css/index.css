@@ -1,3 +1,337 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Naviagtion bar */
+nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media only screen and (min-width: 800px) {
+  nav {
+    flex-direction: row;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  text-decoration: bold;
+  color: #a8a8a8;
+  width: 100%;
+  text-justify: center;
+  height: 50px;
+  text-align: center;
+  border-bottom: gray solid 1px;
+  padding-top: 15px;
+}
+@media only screen and (min-width: 500px) {
+  nav a {
+    border-bottom: none;
+  }
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 500px) {
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .nav-links {
+    width: 75%;
+  }
+}
+
+.logo-container {
+  width: 100%;
+  text-align: center;
+  border-bottom: gray solid 1px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+@media only screen and (min-width: 500px) {
+  .logo-container {
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .logo-container {
+    width: 25%;
+  }
+}
+
+/* Index Header */
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 450px;
+}
+
+.h1-container h1 {
+  display: block;
+  height: 100%;
+  font-size:5rem;
+}
+
+.h1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-img {
+  width: 400px;
+  height: 400px;
+  display: none;
+}
+
+/* Media query for getting rid of globe pic for mobile */
+@media only screen and (min-width: 800px) {
+  .header-img {
+    display: inline-block;
+  }
+}
+
+.btn-lg {
+  background: white;
+  width: 170px;
+  height: 35px;
+  font-size: 1rem;
+  
+}
+
+/* Index middle section */
+section {
+  margin: 20px 0;
+}
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (min-width: 800px) {
+  .section-row {
+    flex-direction: row;
+  }
+}
+
+.segment {
+  margin: 20px 20px;
+  width: 90%;
+  align-items: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .seg-1,
+  .seg-2 {
+    height: auto;
+    width: 48%;
+  }
+
+  .seg-3,
+  .seg-4,
+  .seg-5 {
+    height: auto;
+    width: 31%;
+  }
+}
+
+.middle-img {
+  height: auto;
+  width: 100%;
+}
+
+hr {
+  margin: 0 20px 20px 20px;
+}
+
+/* Contacts */
+address {
+  margin: 20px 0px 20px 20px;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  padding-top: 20px;
+}
