@@ -241,7 +241,7 @@ header {
 .h1-container h1 {
   display: block;
   height: 100%;
-  font-size: 80px;
+  font-size:5rem;
 }
 
 .h1-container {
@@ -268,7 +268,8 @@ header {
   background: white;
   width: 170px;
   height: 35px;
-  font-size: 16px;
+  font-size: 1rem;
+  
 }
 
 /* Index middle section */
